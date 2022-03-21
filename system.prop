@@ -1,0 +1,16 @@
+ro.product.name=olive
+ro.product.device=olive
+ro.build.product=olive
+ro.product.brand=xiaomi
+ro.build.date=Fri Jul 20 15:18:00 CST 2018
+ro.build.date.utc=1592832458
+ro.bootimage.build.date=1592832458
+sys.usb.controller=7000000.dwc3
+sys.usb.rndis.func.name=rndis_bam
+sys.usb.rmnet.func.name=rmnet_bam
+ro.treble.enabled=true
+ro.build.system_root_image=true
+ro.secure=1
+ro.adb.secure=0
+ro.boot.avb_version=1.0
+ro.boot.vbmeta.avb_version=1.0
