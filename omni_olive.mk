@@ -30,11 +30,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.product.device \
-    ro.product.name \
-    ro.build.product
-
 PRODUCT_PROPERTY_OVERRIDES += \
+        ro.product.name=olive \
+        ro.product.device=olive \
+        ro.product.brand=xiaomi \
 	ro.secure=1 \
 	ro.adb.secure=0

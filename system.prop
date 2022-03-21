@@ -1,7 +1,4 @@
-ro.product.name=olive
-ro.product.device=olive
 ro.build.product=olive
-ro.product.brand=xiaomi
 ro.build.date=Fri Jul 20 15:18:00 CST 2018
 ro.build.date.utc=1592832458
 ro.bootimage.build.date=1592832458
