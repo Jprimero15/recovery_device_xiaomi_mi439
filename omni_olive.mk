@@ -18,10 +18,8 @@
 # Release name
 PRODUCT_RELEASE_NAME := olive
 
-# Inherit from this configs
-$(call inherit-product, build/target/product/embedded.mk)
+# Inherit from vendor config
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, build/target/product/core_64_bit.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := olive
@@ -30,9 +28,5 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.product.name=olive \
-        ro.product.device=olive \
-        ro.product.brand=xiaomi \
-	ro.secure=1 \
-	ro.adb.secure=0
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/xiaomi/olive/device.mk)

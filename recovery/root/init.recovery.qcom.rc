@@ -37,8 +37,6 @@ on fs
     install_keyring
 
 on init
-    mkdir /system/bin
-    mkdir /system/etc
     symlink /vendor/manifest.xml /system/manifest.xml
 
     start hwservicemanager
