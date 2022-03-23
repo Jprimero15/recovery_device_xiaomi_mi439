@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_olive.mk
+	$(LOCAL_DIR)/twrp_olive.mk
 
 COMMON_LUNCH_CHOICES := \
-	omni_olive-eng
+	twrp_olive-eng

@@ -14,25 +14,36 @@
 # limitations under the License.
 #
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, build/target/product/embedded.mk)
-$(call inherit-product, build/target/product/core_64_bit.mk)
+# Default device path
+LOCAL_PATH := device/$(PRODUCT_BRAND)/$(TARGET_DEVICE)
 
-# Default device path for common folder
-DEVICE_PATH := device/xiaomi/olive
+# Exclude APEX
+TW_EXCLUDE_APEX := true
 
 # Platform version
-PLATFORM_VERSION := 80
-PLATFORM_SECURITY_PATCH := 2099-12-31
+PLATFORM_SECURITY_PATCH := 2127-12-31
+PLATFORM_VERSION := 127
+PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
-# Overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.name=olive \
-    ro.product.device=olive \
-    ro.product.brand=xiaomi \
-    ro.secure=1 \
-    ro.adb.secure=0 \
-    ro.vendor.build.security_patch=$(PLATFORM_SECURITY_PATCH)
+# Dependecies
+PRODUCT_COPY_FILES += \
+    $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl.recovery
+
+# Qcom decryption
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
 
 # OEM otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \

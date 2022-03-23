@@ -67,7 +67,7 @@
 	# R11.1 Settings
         export OF_QUICK_BACKUP_LIST="/boot;/data;/system;"
 	export FOX_VERSION="R11.1_3.1"
-	export FOX_BUILD_TYPE="Stable"
+	export FOX_BUILD_TYPE="Beta"
 	export OF_MAINTAINER="Jprimero15"
         export OF_MAINTAINER_AVATAR="$INCLUDE_PATH/Jprimero15.png"
 
