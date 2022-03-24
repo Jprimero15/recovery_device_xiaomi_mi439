@@ -25,6 +25,11 @@ DEVICE_PATH := device/xiaomi/olive
 PLATFORM_VERSION := 80
 PLATFORM_SECURITY_PATCH := 2099-12-31
 
+# Qcom standard decryption
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 # Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.name=olive \
