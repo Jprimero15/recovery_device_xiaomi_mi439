@@ -17,12 +17,6 @@
 # Default device path
 LOCAL_PATH := device/$(PRODUCT_BRAND)/$(TARGET_DEVICE)
 
-# Platform version
-PLATFORM_SECURITY_PATCH := 2127-12-31
-PLATFORM_VERSION := 127
-PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-
 # Dependecies
 PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
