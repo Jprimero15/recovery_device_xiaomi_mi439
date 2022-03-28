@@ -17,9 +17,6 @@
 # Default device path
 LOCAL_PATH := device/$(PRODUCT_BRAND)/$(TARGET_DEVICE)
 
-# Exclude APEX
-TW_EXCLUDE_APEX := true
-
 # Platform version
 PLATFORM_SECURITY_PATCH := 2127-12-31
 PLATFORM_VERSION := 127
