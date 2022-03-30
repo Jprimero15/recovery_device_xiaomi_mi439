@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Default device path
-LOCAL_PATH := device/$(PRODUCT_BRAND)/$(TARGET_DEVICE)
-
 # Dependecies
 PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
