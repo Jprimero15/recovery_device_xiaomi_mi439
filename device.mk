@@ -22,10 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
-# Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl.recovery
-
 # Qcom decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
