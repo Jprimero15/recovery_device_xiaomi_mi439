@@ -1,4 +1,2 @@
 ro.boot.avb_version=1.0
 ro.boot.vbmeta.avb_version=1.0
-ro.board.platform=sdm439
-ro.product.board=sdm439
