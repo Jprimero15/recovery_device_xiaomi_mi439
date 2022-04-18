@@ -24,7 +24,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/xiaomi/olive
+DEVICE_PATH := device/xiaomi/mi439
 
 # Architecture
 TARGET_ARCH := arm64

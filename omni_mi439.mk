@@ -16,17 +16,17 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := olive
+PRODUCT_RELEASE_NAME := mi439
 
 # Inherit from vendor config
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := olive
-PRODUCT_NAME := omni_olive
+PRODUCT_DEVICE := mi439
+PRODUCT_NAME := omni_mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/olive/device.mk)
+$(call inherit-product, device/xiaomi/mi439/device.mk)

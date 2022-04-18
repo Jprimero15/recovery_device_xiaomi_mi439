@@ -19,7 +19,7 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, build/target/product/core_64_bit.mk)
 
 # Default device path for common folder
-DEVICE_PATH := device/xiaomi/olive
+DEVICE_PATH := device/xiaomi/mi439
 
 # Qcom standard decryption
 PRODUCT_PACKAGES += \

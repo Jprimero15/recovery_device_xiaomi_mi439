@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_olive.mk
+	$(LOCAL_DIR)/omni_mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-	omni_olive-eng
+	omni_mi439-eng
