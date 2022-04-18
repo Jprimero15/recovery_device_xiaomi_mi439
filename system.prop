@@ -1,2 +1,3 @@
+ro.build.system_root_image=true
 ro.boot.avb_version=1.0
 ro.boot.vbmeta.avb_version=1.0
