@@ -30,15 +30,6 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
-# Overrides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.name=olive \
-    ro.product.device=olive \
-    ro.product.brand=xiaomi \
-    ro.secure=1 \
-    ro.adb.secure=0 \
-    ro.vendor.build.security_patch=$(PLATFORM_SECURITY_PATCH)
-
 # OEM otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/recovery/security/miui
