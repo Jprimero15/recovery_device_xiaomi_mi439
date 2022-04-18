@@ -21,6 +21,8 @@
 export TW_DEFAULT_LANGUAGE="en"
 export LC_ALL="C"
 export ALLOW_MISSING_DEPENDENCIES=true
+export TARGET_DEVICE_ALT="mi439,olives,olive,olivelite,olivewood,pine"
+export OF_TARGET_DEVICES="mi439,olives,olive,olivelite,olivewood,pine"
 export OF_USE_MAGISKBOOT=1
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
