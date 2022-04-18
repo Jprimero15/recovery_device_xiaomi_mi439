@@ -21,10 +21,6 @@ $(call inherit-product, build/target/product/core_64_bit.mk)
 # Default device path for common folder
 DEVICE_PATH := device/xiaomi/olive
 
-# Platform version
-PLATFORM_VERSION := 80
-PLATFORM_SECURITY_PATCH := 2099-12-31
-
 # Qcom standard decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
