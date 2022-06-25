@@ -5,16 +5,10 @@
 /dtbo            emmc      /dev/block/bootdevice/by-name/dtbo          flags=display="DTBO";backup=1;flashimg=1
 /cache           ext4      /dev/block/bootdevice/by-name/cache         flags=display="Cache";wipeingui
 /vbmeta          emmc      /dev/block/bootdevice/by-name/vbmeta        flags=display="VBmeta";backup=1;flashimg=1
-/system_root     ext4      /dev/block/bootdevice/by-name/system        flags=display="System";backup=1;wipeingui
-/system_image    emmc      /dev/block/bootdevice/by-name/system        flags=display="System Image";backup=1;flashimg=1
 /aboot           emmc      /dev/block/bootdevice/by-name/aboot         flags=display="Bootloader";backup=1
 /abootbak        emmc      /dev/block/bootdevice/by-name/abootbak      flags=display="Bootloader Backup";backup=1
-/vendor          ext4      /dev/block/bootdevice/by-name/vendor        flags=display="Vendor";backup=1;wipeingui
-/vendor_image    emmc      /dev/block/bootdevice/by-name/vendor        flags=display="Vendor Image";backup=1;flashimg=1
 /firmware        vfat      /dev/block/bootdevice/by-name/modem         flags=display="Firmware";mounttodecrypt
 /firmware_image  emmc      /dev/block/bootdevice/by-name/modem         flags=display="Firmware Image";backup=1;flashimg=1
-/cust            ext4      /dev/block/bootdevice/by-name/cust          flags=display="Cust";backup=1
-/cust_image      ext4      /dev/block/bootdevice/by-name/cust          flags=display="Cust Image";backup=1;flashimg=1
 /persist         ext4      /dev/block/bootdevice/by-name/persist       flags=display="Persist";backup=1
 /persist_image   emmc      /dev/block/bootdevice/by-name/persist       flags=display="Persist Image";backup=1;flashimg=1
 /splash          emmc      /dev/block/bootdevice/by-name/splash        flags=backup=1;display="Splash";flashimg=1
