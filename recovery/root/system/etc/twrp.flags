@@ -5,6 +5,7 @@
 /dtbo            emmc      /dev/block/bootdevice/by-name/dtbo          flags=display="DTBO";backup=1;flashimg=1
 /cache           ext4      /dev/block/bootdevice/by-name/cache         flags=display="Cache";wipeingui
 /vbmeta          emmc      /dev/block/bootdevice/by-name/vbmeta        flags=display="VBmeta";backup=1;flashimg=1
+/metadata        ext4      /dev/block/bootdevice/by-name/logdump       flags=display="Metadata"
 /aboot           emmc      /dev/block/bootdevice/by-name/aboot         flags=display="Bootloader";backup=1
 /abootbak        emmc      /dev/block/bootdevice/by-name/abootbak      flags=display="Bootloader Backup";backup=1
 /firmware        vfat      /dev/block/bootdevice/by-name/modem         flags=display="Firmware";mounttodecrypt
