@@ -28,6 +28,13 @@
 
 import /init.recovery.qcom_decrypt.rc
 
+service detect-dynamic-partitions /system/bin/detect-dynamic-partitions.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 service set-device-props /system/bin/set-device-props.sh
     user root
     group root
@@ -42,4 +49,5 @@ on fs
 
 on init
     setprop prepdecrypt.loglevel 2
+    start detect-dynamic-partitions
     start set-device-props
