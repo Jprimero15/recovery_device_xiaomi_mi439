@@ -51,6 +51,7 @@ on init
     setprop prepdecrypt.loglevel 2
     start detect-dynamic-partitions
     start set-device-props
+    exec u:r:recovery:s0 -- /system/bin/resetprop ro.boot.verifiedbootstate orange
 
 on boot
     start health-hal-2-1
