@@ -51,3 +51,6 @@ on init
     setprop prepdecrypt.loglevel 2
     start detect-dynamic-partitions
     start set-device-props
+
+on boot
+    start health-hal-2-1
