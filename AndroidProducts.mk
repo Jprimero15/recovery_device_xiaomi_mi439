@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/twrp_olive.mk
+	$(LOCAL_DIR)/twrp_mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-	twrp_olive-eng
+	twrp_mi439-eng
