@@ -1,4 +1,5 @@
 # mount point    fstype    device                device2               flags
+/system_ext	 ext4	   system_ext                                  flags=display="System Ext"
 /storage         ext4      /data/media/0                               flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
 /boot            emmc      /dev/block/bootdevice/by-name/boot          flags=display="Boot";backup=1;flashimg=1
 /recovery        emmc      /dev/block/bootdevice/by-name/recovery      flags=display="Recovery";backup=1;flashimg=1
