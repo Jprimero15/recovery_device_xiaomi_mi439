@@ -68,7 +68,6 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.usbconfigfs=true \
     console=ttyMSM0,115200,n8 \
     earlycon=msm_serial_dm,0x78B0000 \
-    loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 ehci-hcd.park=3 \
     androidboot.android_dt_dir=/non-existent \
