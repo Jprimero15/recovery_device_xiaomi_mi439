@@ -19,6 +19,9 @@ case "$(cat /sys/firmware/devicetree/base/model)" in
 	"PINE QRD")
 		set_device_codename "pine"
 		set_device_model "Redmi 7A"
+		for i in x y w h; do
+			setprop twrp.gui.offset.${i} 0
+		done
 		;;
 	"Olive QRD")
 		set_device_codename "olives"
