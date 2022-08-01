@@ -23,7 +23,7 @@ TW_EXCLUDE_APEX := true
 
 # Dependecies
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/olive/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+    $(OUT_DIR)/target/product/mi439/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
 # Dynamic Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
