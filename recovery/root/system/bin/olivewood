@@ -1,3 +1,4 @@
 #!/sbin/sh
 source /system/bin/_set_codename.sh
 set_device_codename "olivewood"
+echo "olivewood" > /cache/last-recovery-codename

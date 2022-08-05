@@ -1,0 +1,4 @@
+#!/system/bin/sh
+source /system/bin/_set_codename.sh
+set_device_codename "Mi439"
+echo "Mi439" > /cache/last-recovery-codename

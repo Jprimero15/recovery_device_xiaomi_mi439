@@ -1,3 +1,4 @@
 #!/sbin/sh
 source /system/bin/_set_codename.sh
 set_device_codename "olivelite"
+echo "olivelite" > /cache/last-recovery-codename
