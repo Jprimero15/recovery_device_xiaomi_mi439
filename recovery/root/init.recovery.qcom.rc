@@ -48,6 +48,7 @@ on fs
     export ANDROID_ROOT /system_root
 
 on init
+    write /proc/sys/dev/dt2w 1
     setprop prepdecrypt.loglevel 2
     start detect-dynamic-partitions
     start set-device-props
