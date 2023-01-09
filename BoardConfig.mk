@@ -71,7 +71,8 @@ BOARD_KERNEL_CMDLINE := \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 ehci-hcd.park=3 \
     androidboot.android_dt_dir=/non-existent \
-    androidboot.boot_devices=soc/7824900.sdhci
+    androidboot.boot_devices=soc/7824900.sdhci \
+    printk.devkmsg=on
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
