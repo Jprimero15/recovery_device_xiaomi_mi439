@@ -1,7 +1,5 @@
 #!/sbin/sh
 
-LAST_CODENAME_FILE="/mnt/cache/last-recovery-codename"
-
 set_device_codename() {
 	resetprop "ro.build.product" "$1"
 	resetprop "ro.product.device" "$1"
@@ -31,13 +29,5 @@ case "$(cat /sys/firmware/devicetree/base/model)" in
 		setprop "persist.vendor.ctm.disallowed" "true"
 		;;
 esac
-
-mkdir -p /mnt/cache
-umount /mnt/cache || true
-mount -o ro /dev/block/by-name/cache /mnt/cache || true
-if [ -f "$LAST_CODENAME_FILE" ]; then
-	set_device_codename "$(cat $LAST_CODENAME_FILE)"
-fi
-umount /mnt/cache || true
 
 exit 0
