@@ -15,17 +15,16 @@ set_device_model() {
 	done
 }
 
-case "$(cat /sys/firmware/devicetree/base/model)" in
-	"PINE QRD")
-		set_device_codename "pine"
-		set_device_model "Redmi 7A"
+set_device_codename "$(cat /sys/xiaomi-sdm439-mach/codename)"
+set_device_model "$(cat /sys/xiaomi-sdm439-mach/product_name)"
+
+case "$(cat /sys/xiaomi-sdm439-mach/codename)" in
+	"pine")
 		for i in x y w h; do
 			setprop twrp.gui.offset.${i} 0
 		done
 		;;
-	"Olive QRD")
-		set_device_codename "olives"
-		set_device_model "Redmi 8"
+	"olive"|"olivelite"|"olivewood")
 		setprop "persist.vendor.ctm.disallowed" "true"
 		;;
 esac
