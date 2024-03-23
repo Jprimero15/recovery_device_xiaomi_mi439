@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+# FUSE passthrough
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # Qcom decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
