@@ -28,6 +28,15 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
+# ensure that /sdcard is bind-unmounted before f2fs data repair or format
+OF_UNBIND_SDCARD_F2FS := 1
+
+# automatically wipe /metadata after data format
+OF_WIPE_METADATA_AFTER_DATAFORMAT := 1
+
+# avoid MTP issues after data format
+OF_BIND_MOUNT_SDCARD_ON_FORMAT := 1
+
 # f2fs utilities
 PRODUCT_PACKAGES += \
     sg_write_buffer \
