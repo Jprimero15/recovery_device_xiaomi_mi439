@@ -44,7 +44,6 @@ service hvdcp_opti /system/bin/hvdcp_opti
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    export ANDROID_ROOT /system_root
 
 on init
     write /proc/sys/dev/dt2w 1
