@@ -29,4 +29,10 @@ case "$(cat /sys/xiaomi-sdm439-mach/codename)" in
 		;;
 esac
 
+# Force enable casefold and prj_quota
+# Force disable sdcardfs
+resetprop external_storage.projid.enabled 1
+resetprop external_storage.casefold.enabled 1
+resetprop external_storage.sdcardfs.enabled 0
+
 exit 0
